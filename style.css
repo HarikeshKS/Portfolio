@@ -13,7 +13,8 @@ body{
 }
 
 .card-img{
-    width: 100%;
+    width: 20rem;
+    height: 12rem;
     object-fit: cover;
     border-radius: 10px;
 }

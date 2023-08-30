@@ -56,6 +56,8 @@ body {
     justify-content: center;
     font-size: 16px;
     margin: 4px 2px;
+    margin-top: 0;
+    margin-bottom: 10px;
     cursor: pointer;
     box-shadow: 3px 3px 5px #00000086;
     font-family: 'Montserrat', sans-serif;
@@ -66,7 +68,7 @@ body {
     background-color: #10033b;
     transform: rotate(3deg);
     text-shadow: #000;
-    box-shadow: 8px 8px 6px #00000086;
+    box-shadow: 6px 6px 6px #00000086;
     color: #F6F1E9;
     cursor: pointer;
 }
@@ -135,7 +137,7 @@ body {
     margin: 25px;
     height: 82%;
     border-radius: 100%;
-    transition: transform 0.5s;
+    transition: transform 0.5s ease;
 }
 .grid-card img:hover {
     transform: scale(1.1);
@@ -207,7 +209,6 @@ body {
     }
     
     .card:hover {
-        animation: none;
         cursor: auto;
     }
     
@@ -217,6 +218,7 @@ body {
     
     #first-grid-content {
         grid-column: span 2;
+
     }
     
     #copyright>p {
@@ -238,4 +240,19 @@ body {
     }
 }
 
+.shape {
+    width: 300px;
+    height: 300px;
+    background-color: #00d0ff;
+    clip-path: circle(100%);
+    clip-path: ellipse(130px 140px at 10% 20%);
+    clip-path: polygon(41% 13%, 21% 42%, 25% 63%, 98% 7%, 88% 58%, 32% 100%, 6% 78%, 0% 43%, 26% 4%);
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.shape:hover {
+    clip-path: polygon(100% 9%, 21% 42%, 25% 63%, 100% 9%, 88% 58%, 32% 100%, 6% 78%, 0% 43%, 26% 4%);
+}
